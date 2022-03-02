@@ -1,5 +1,3 @@
-
-
 function convertToSlug(Text) {
     return Text.toLowerCase()
         .replace(/ /g, "-")
@@ -17,7 +15,7 @@ const showData = (movies) => {
         const slug = convertToSlug(data.title + " " + year);
 
         HTMLCard += `
-        <a href="/detail.html?title=${slug}&id=${data.id}" class="card">
+        <a href="/website-movie-codelabs/detail.html?title=${slug}&id=${data.id}" class="card">
             <img class="card__image" src="${IMAGEBASEURL}/${data.poster_path}"/>
             <div class="card__content">
                 <p class="card__title">${data.title} (${year})</p>
